@@ -3,7 +3,7 @@ name: Build Schnerror
 on:
   push:
     branches:
-      - master
+      - main
     
 jobs:
   build:
