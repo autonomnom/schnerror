@@ -3,7 +3,6 @@ name: Build Schnerror
 on:
   push:
     branches:
-      # laut tutorial master aber hab beim commiten stattdessen nen main branch gemacht
       - master
     
 jobs:
