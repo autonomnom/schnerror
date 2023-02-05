@@ -28,6 +28,7 @@ jobs:
           npm run build
 
       - name: Deploy
+        # error exit code 128 -> settings,action,general,workflow permissions:read&write,allow github actions to approve pull requests  
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./_site
