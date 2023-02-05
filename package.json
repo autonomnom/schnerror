@@ -1,0 +1,21 @@
+{
+  "name": "schnerror",
+  "version": "1.0.0",
+  "description": "insights into the work of chris schnerr",
+  "main": "index.js",
+  "scripts": {
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'schnerror'",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "degit": "^2.8.4"
+  }
+}

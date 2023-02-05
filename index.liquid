@@ -1,0 +1,26 @@
+---
+me: Chris Schnerr
+title: schnerror
+images:
+    - vvater1.png
+    - floridah.jpg
+    - floridah1.jpg
+    - selim1.jpg
+    - selim2.jpg
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ me }}</title>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <ul>
+            {% for filename in images %}
+            <li><a href="img/{{ filename | | url_encode }}">{{ filename }}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
